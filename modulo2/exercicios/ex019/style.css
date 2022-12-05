@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*
+Em HTML é id    = em CSS é # (só pode um elemento)
+Em HTML é class = em CSS é . (pode vários elementos)
+*/
+
+@font-face {
+    font-family: 'pokemon';
+    src: url(Pokemon\ Hollow.ttf) format(truetype);
+}
+
+body{
+    background-color: rgb(248, 244, 225);
+    
+}
+
+p{
+    text-align: justify;
+    padding: 0px 15px;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(156, 90, 2);
+    color: white;
+            
+}
+h1{
+    font-family: pokemon;
+    color: rgb(223, 186, 3);
+    padding: 0px 15px;
+}
+h2{
+    color: rgb(255, 153, 0);;
+    padding: 0px 15px;
+}
+
+.basico{
+    color: green;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: rgb(221, 203, 43);
+    font-weight: bold;
+}
+
+.avancado{
+    color: brown;
+    font-weight: bold;
+}
