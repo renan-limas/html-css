@@ -36,40 +36,65 @@ body{
 }
 
 header{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    max-width: 1000px;
+    min-width: 280px;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 40px 20px 0px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+    
 }
 
 header > h1{
     color: white;    
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-destaque);    
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
 }
 
 header > p{
     color: white;
+    max-width: 600px;
+    margin: auto;
 }
 
 nav{
-    background-color: var(--cor5);  
-    
+    background-color: var(--cor5); 
+    max-width: 1000px; 
+    min-width: 280px;
+    margin: auto;
+    padding: 10px 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
 
 nav > a{
-    color: var(--cor0);
+    color: white;
+    padding: 10px;
+    text-decoration: none; 
+    transition-duration: 0.5s;
+    border-radius: 5px;
 }
 
-img{
-    width: 100%;
+nav > a:hover{
+    color: var(--cor0);
+    background-color: var(--cor4);
 }
 
 main{
-    background-color: white;
-       
+    background-color: white;       
     padding: 20px;
-    border-radius: 10px;
-
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     min-width: 280px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
 }
 
 main h1{
@@ -81,6 +106,17 @@ main h2{
     color: var(--cor5);
     font-family: var(--fonte-android);
 }
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
 
 footer{
     background-color: var(--cor5);
