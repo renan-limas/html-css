@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M">
+            <label for="imasc">Masculino</label>
+            <!--No caso do checkbox do tipo radio, o nome tem que ser igual em todos os checkbox para que funcione. Caso contrário será possível parcar todos os radios e não vai dar mais pra desmarcar. NÃO ESQUECER DE COLOCAR O "value", SE NÃO É ENVIADO SOMENTE "on" para as duas opções (masculino e feminio) NO FORMULÁRIO-->
+            <br>            
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+
+        <fieldset>            
+
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbasquete" id="iesbasquete" checked> <label for="iesbasquete">Basquete</label> <br>
+            <!--A opção "checked" deixa por padrão a opção já marcada. O usuário pode desmarcar.-->
+
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+
+            <input type="checkbox" name="esnatacao" id="iesnatacao"> <label for="iesnatacao">Natação</label> <br>
+
+            <input type="checkbox" name="estenis" id="iestenis"> <label for="iestenis">Tênis</label>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
