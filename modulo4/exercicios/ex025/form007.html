@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+</head>
+<body>
+    <!--https://www.youtube.com/watch?v=PFGmSEj2wIo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=26-->
+    <h1>Exemplo de Formulário</h1>
+
+    <h2>Lista pré determinada</h2>
+    <p>Sem opção de digitar um outro ítem que não esteja na lista.</p>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!--O [method="get"] tem um limite de 3000bytes para envio, caso o projeto exceda esse valor é ncessário utilizar o [method="post"]-->
+
+        <label for="iest">Estado</label>
+        <select name="est" id="iest" required>
+            <option value="" selected>---Escolha um estado---</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Noredeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+        </select>
+
+        <h2>Lista pré determinada editável</h2>
+        <p>É uma lista pré determinada, mas o usuário consegue escrever e enviar um dado novo, uma profissão neste caso, que não esteja na lista.</p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="|">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                </option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Menssagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua menssagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">            
+        </p>
+
+    </form>
+    
+</body>
+</html>

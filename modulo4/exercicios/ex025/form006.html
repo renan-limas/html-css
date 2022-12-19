@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 6</title>
+</head>
+<body>
+    <!--https://www.youtube.com/watch?v=acOURIAlB1Q&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=25-->
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#1b7fb1">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+
+        <p>
+            <label for="ifoto"></label>
+            <input type="file" name="fogo" id="ifoto">
+            <!--Quando for utilizado esse tipo de controle (input:file) não se pode utilizar o método get (method="get")na tag form e sim o POST, porque aí os arquivos seram enviados no cabeçalho.-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
