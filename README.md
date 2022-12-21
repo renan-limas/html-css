@@ -7,4 +7,4 @@
 
 <li><a href="https://renan-limas.github.io/html-css/modulo4/redesocial" target="_blank">Desafio Curso em Vídeo | Projeto Redes Sociais</a></li>
 
-<li><a href="https://renan-limas.github.io/html-css/modulo4/exercicios/ex026/mq005" target="_blank">Curso em Vídeo | Menu Hamburguer</a></li>
+<li><a href="https://renan-limas.github.io/html-css/modulo4/login" target="_blank">Desafio Curso em Vídeo | Tela de Login</a></li>
